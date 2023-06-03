@@ -31,3 +31,15 @@ reg = reg.fit(x_train, y_train)
 # prediccion
 y_pred = reg.predict(x_test)
 print("Accuracy de entrenamiento:", reg.score(x_train, y_train))
+# ejercicio de prediccion
+# variables a utilizar
+q1 = 0
+q2 = 1
+q3 = 2
+q4 = 3
+q5 = 4
+answer = reg.predict([[q1, q2, q3, q4, q5]])
+if answer == 1:
+    print("Se van a divorciar")
+else:
+    print("No se vana divorciar")
